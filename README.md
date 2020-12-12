@@ -1,4 +1,2 @@
-Αντικαταστήστε αυτά τα αρχέια στο /etc/weewx/skins/Standard
-
-sudo /etc/init.d/weewx start
-sudo /etc/init.d/weewx stop
+ μόνο για το weewx.conf=  αντικαταστήστε στον φακελο weewx.conf που είναι στο /etc/weewx/  ΜΟΝΟ το αντοίστιχο τμήματα του αρχείου σας.
+μετά δώστε σε ένα τερματικό  sudo /etc/init.d/weewx reload 
