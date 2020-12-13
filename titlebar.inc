@@ -6,7 +6,7 @@
 
 <div id="title_bar">
   <div id="title">
-    <h1 class="page_title">$station.location&nbsp;<a href="http://kolxiko.epizy.com/live/">Live!!</a></h1>
+    <h1 class="page_title">$station.location&nbsp;</h1>
     <p class="lastupdate">$current.dateTime</p>
   </div>
   <div id="rss_link"><a href="rss.xml">RSS</a></div>
