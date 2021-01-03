@@ -21,7 +21,7 @@
           <th class="hilo_week">Εβδομάδας</th>
           <th class="hilo_month">Mήνα</th>
           <th class="hilo_year">Ετους</th>
-          
+          <th class="hilo_rainyear">Aπό την αρχή</th>
         </tr>
         <tr>
           <td class="label">$obs.label.outTemp</td>
@@ -115,12 +115,12 @@
           <td class="label">Mέγιστη Ριπή</td>
           <td class="units">
             $unit.label.wind<br/>
-            $unit.label.windDir
+            
           </td>
           #for $archive in $archive_data
           <td class="data new_row">
             $archive.wind.max.format(add_label=False)<br/>
-            $archive.wind.gustdir.format(add_label=False)<br/>
+            $archive.wind.gustdir.ordinal_compass<br/>
             <span class="timestamp">$archive.wind.maxtime</span>
           </td>
           #end for
@@ -148,12 +148,12 @@
           </td>
           <td class="units">
             $unit.label.wind<br/>
-            $unit.label.windDir
+            
           </td>
           #for $archive in $archive_data
           <td class="data new_row">
             $archive.wind.vecavg.format(add_label=False)<br/>
-            $archive.wind.vecdir.format(add_label=False)
+            $archive.wind.vecdir.ordinal_compass
           </td>
           #end for
         </tr>
@@ -267,3 +267,4 @@
 
   </div>
 </div>
+
