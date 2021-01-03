@@ -121,12 +121,12 @@
         <td class="data new_row hilo_$archive[0]">
           <span title="$archive[1].wind.maxtime">
             $archive[1].wind.max.format(add_label=False)</span><br/>
-          $archive[1].wind.gustdir.format(add_label=False)
+          $archive[1].wind.gustdir.ordinal_compass
         </td>
         #end for
         <td class="units">
           $unit.label.wind<br/>
-          $unit.label.windDir
+          
         </td>
       </tr>
       <tr>
@@ -154,12 +154,12 @@
         #for $archive in $archive_data
         <td class="data new_row hilo_$archive[0]">
           $archive[1].wind.vecavg.format(add_label=False)<br/>
-          $archive[1].wind.vecdir.format(add_label=False)
+          $archive[1].wind.vecdir.ordinal_compass
         </td>
         #end for
         <td class="units">
           $unit.label.wind<br/>
-          $unit.label.windDir
+          
         </td>
       </tr>
 
